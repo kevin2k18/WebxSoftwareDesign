@@ -2,7 +2,7 @@ body
 {
   font-family: Arial, Helvetica, sans-serif;
 }
-/* The Question */
+/* Custom Radio Button */
 #question p:nth-child(1)
 {
   font-weight: bold;
@@ -13,24 +13,23 @@ body
 {
   padding: 0px 15px;
 }
-/* Custom Radio Button */
-.rb-option{
+.jrt-option{
     border: 1px solid #e7e9ec;
     margin: 10px 15px;
     padding: 15px;
 }
-.rb-Border{
+.jrt-Border{
     border-radius: 100%;
     border: 2px solid #d6dce6;
     display: inline-block;
     margin-right:5px ;
 }   
-.rb-Select{
+.jrt-Select{
     margin: 2px;
     padding: 4px;
     border-radius: 100%;
 }
-.rb-Border + span{
+.jrt-Border + span{
     display: inline-block;
 }
     /* option 1 */
@@ -50,13 +49,14 @@ body
     .opt--radio4 > span:after{
         content: "Azure Resource Manager Locks";
     }
+
 /* Multi level dropdown menu */
 nav>ul:nth-child(1){
     position: relative;
     padding: 15px;
     border: 1px solid #f0f1f5;
 }
-.right {
+.jrt-right {
     border: solid black;
     border-width: 0 1px 1px 0; 
     padding: 3px;
@@ -93,7 +93,6 @@ nav> ul> li{
         box-shadow:         3px 3px 5px 6px #ccc;
         background-color: #ffffff;
     }
-    
 /* show the dropdown */
     ul > li:hover > ul{
         position: absolute;
@@ -108,27 +107,27 @@ nav> ul> li{
         left: 95%;
         width: 130%;
     }
-/* Timer Limit */
-#vwg-timer{
+
+/* Time Limit */
+#jrt-timerlimit{
     margin: 0px 10%;
     padding: 10px;
 }
-#vwg-setTimeSec{
+#jrt-setTimeSec{
     text-align: center;
 }
-#vwg-timerCountDwn{
+#jrt-timerCountDwn{
     background-color: #e9edf1;
     padding: 15px 10px 5px 10px;
     margin-top: 10px;
     border-radius: 4px;
 }
-#vwg-timeCont{
+#jrt-timeCont{
     background-color: #ffffff;
     height: 3px;
     border-radius: 5px;
 }
-
-#vwg-timeDigitProgrs{
+#jrt-timeDigitProgrs{
     color: #968290;
 }
 .ui-widget-header{

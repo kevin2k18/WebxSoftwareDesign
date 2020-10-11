@@ -9,8 +9,9 @@
 	<script type="text/javascript" src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"> </script>
 	</head>
 <body>
+	<!-- Custom Radio Button -->
 	<section>
-		<!-- Question -->
+		<!-- The Question -->
         <div id="question">
             <p>5. QUESTION</p>
             <p>
@@ -19,37 +20,38 @@
         </div>
         <div>
         	<!-- Radio Button 1 -->
-            <div class="rb-option opt--radio1">
-                <div class="rb-Border border--rad1">
-                    <div class="rb-Select select--rad1"></div>
+            <div class="jrt-option opt--radio1">
+                <div class="jrt-Border border--rad1">
+                    <div class="jrt-Select select--rad1"></div>
                 </div>
                 <span></span>
             </div>
 
             <!-- Radio Button 2 -->
-            <div class="rb-option opt--radio2">
-                <div class="rb-Border border--rad2">
-                    <div class="rb-Select select--rad2"></div>
+            <div class="jrt-option opt--radio2">
+                <div class="jrt-Border border--rad2">
+                    <div class="jrt-Select select--rad2"></div>
                 </div>
                 <span></span>
             </div>
 
             <!-- Radio Button 3 -->
-            <div class="rb-option opt--radio3">
-                <div class="rb-Border border--radio3">
-                    <div class="rb-Select select--rad3"></div>
+            <div class="jrt-option opt--radio3">
+                <div class="jrt-Border border--radio3">
+                    <div class="jrt-Select select--rad3"></div>
                 </div>
                 <span></span>
             </div>
 
             <!-- Radio Button 4 -->
-            <div class="rb-option opt--radio4">
-                <div class="rb-Border border--radio4">
-                    <div class="rb-Select select--rad4"></div>
+            <div class="jrt-option opt--radio4">
+                <div class="jrt-Border border--radio4">
+                    <div class="jrt-Select select--rad4"></div>
                 </div>
                 <span></span>
             </div>
         </div>
+        <!-- Multilevel Dropdown Menu -->
         <nav>
 	        <ul>
 	            <li><a href="#">Home</a></li>
@@ -60,9 +62,9 @@
 	                    <li><a href="#">VIEW All Practice Test Coureses and eBooks</a></li>
 	                    
 	                    <!-- 2nd Level Dropdown -->
-	                    <li>AWS Practice Exams <i class="right"></i>
+	                    <li>AWS Practice Exams <i class="jrt-right"></i>
 	                        <ul>
-	                            <li><a href="#">Lorem ipsum dolor <i class="right"></i></a>
+	                            <li><a href="#">Lorem ipsum dolor <i class="jrt-right"></i></a>
 	                            <!-- 3rd level -->
 	                                <ul>
 	                                    <li><a href="#">Lorem ipsum dolor amet</a></li> 
@@ -79,7 +81,7 @@
 	                    </li>
 	                    
 	                    <!-- 2nd Level Dropdown -->
-	                    <li>AWS eBooks <i class="right"></i>
+	                    <li>AWS eBooks <i class="jrt-right"></i>
 	                        <ul>
 	                            <li><a href="#">FREE Intro to Cloud Computing for Beginners</a></li>
 	                            <li><a href="#">AWS Certified Cloud Practitioner eBook</a></li>
@@ -90,7 +92,7 @@
 	                        </ul>
 	                    </li>
 	                    <!-- 2nd Level Dropdown -->
-	                    <li>Azure Reviewers <i class="right"></i>
+	                    <li>Azure Reviewers <i class="jrtright"></i>
 	                        <ul>
 	                            <li><a href="#">Lorem ipsum dolor amet</a></li>
 	                            <li><a href="#">Lorem ipsum dolor amet</a></li> 
@@ -107,7 +109,7 @@
 
 	            <li>My Courses
 	                <ul>
-	                    <li><a href="#">Lorem ipsum dolor</a><i class="right"></i> 
+	                    <li><a href="#">Lorem ipsum dolor</a><i class="jrtright"></i> 
 	                    
 	                        <ul>
 	                            <li><a href="#">Lorem ipsum dolor amet</a></li>
@@ -144,21 +146,22 @@
 	            </li>
 	        </ul>
     	</nav>
-	    <section id="vwg-timer">
-	        <section id="vwg-setTimeSec">
+    	<!-- Time Limit -->
+	    <section id="jrt-timerlimit">
+	        <section id="jrt-setTimeSec">
 	            <div>
-	                <form id="vwg-setTime">
-	                    <label for="vwg-timeInpID">Input time limit in seconds<br></label>
-	                    <input type="number" name="vwg-timeInp" id="vwg-timeInpID" class="vwg-timeInp">
+	                <form id="jrt-setTime">
+	                    <label for="timeInpID">Input time limit in seconds<br></label>
+	                    <input type="number" name="timeInp" id="jrt-timeInpID" class="jrt-timeInp">
 	                    <input type="submit" value="Start!">
 	                </form>
 	            </div>
 	        </section>
-	        <section id="vwg-timeProgrsSec">
-	            <div id="vwg-timerCountDwn">
-	                <span id="vwg-timeDigitProgrs">Time Limit:<span id="vwg-timeDigitTick"> </span></span>
-	                <div id="vwg-timeCont">
-	                   <div id="vwg-timeProgrs" ></div>
+	        <section id="jrt-timeProgrsSec">
+	            <div id="jrt-timerCountDwn">
+	                <span id="jrt-timeDigitProgrs">Time Limit:<span id="jrt-timeDigitTick"> </span></span>
+	                <div id="jrt-timeCont">
+	                   <div id="jrt-timeProgrs" ></div>
 	                </div>
 	            </div>
 	        </section> 
@@ -166,25 +169,26 @@
 	</section>
 </body>
 	<script>
-       $(".rb-option").click(function(){
-            $(".rb-Select").css("background-color", "white" ); //reset
-            $(this).find('.rb-Select').css("background-color", "#0d7dfa" );
+		//custom radio button
+       $(".jrt-option").click(function(){
+            $(".jrt-Select").css("background-color", "white" ); //reset
+            $(this).find('.jrt-Select').css("background-color", "#0d7dfa" );
         });
 
 	    //load progress bar
-	    $("#vwg-timeProgrs").progressbar({
+	    $("#jrt-timeProgrs").progressbar({
 	        value: 0
 	    });
-	    $("#vwg-setTime").submit( function(event){
+	    $("#jrt-setTime").submit( function(event){
 	        event.preventDefault();
 	        var timeProg = 0;
-	        var timeSet = $("#vwg-timeInpID").val();
+	        var timeSet = $("#jrt-timeInpID").val();
 	        var digitTick = timeSet;
 
 	        setInterval(function() {
 	            if(timeSet>0){
 	                --timeSet;
-	                $("#vwg-timeDigitTick").html(timeSet+" sec");
+	                $("#jrt-timeDigitTick").html(timeSet+" sec");
 	            }
 	        }, 1000);
 	        if(timeSet>0){
@@ -192,7 +196,7 @@
 	          
 	            //overide progress bar
 	            while( timeProg <= 100){        
-	                $("#vwg-timeProgrs").progressbar({
+	                $("#jrt-timeProgrs").progressbar({
 	                    value: timeProg
 	                });
 	                timeProg++;
