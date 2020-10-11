@@ -1,0 +1,138 @@
+body
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* The Question */
+#question p:nth-child(1)
+{
+  font-weight: bold;
+  font-size: medium;
+  padding: 10px 15px;
+}
+#question p:nth-child(3)
+{
+  padding: 0px 15px;
+}
+/* Custom Radio Button */
+.rb-option{
+    border: 1px solid #e7e9ec;
+    margin: 10px 15px;
+    padding: 15px;
+}
+.rb-Border{
+    border-radius: 100%;
+    border: 2px solid #d6dce6;
+    display: inline-block;
+    margin-right:5px ;
+}   
+.rb-Select{
+    margin: 2px;
+    padding: 4px;
+    border-radius: 100%;
+}
+.rb-Border + span{
+    display: inline-block;
+}
+    /* option 1 */
+    .opt--radio1 > span:after{
+        content: "Azure Policy";
+    }
+
+    /* option 2 */
+    .opt--radio2 > span:after{
+        content: "Azure Active Directory";
+    }
+    /* option 3 */
+    .opt--radio3 > span:after{
+        content: "Azure role-based Access Control";
+    }
+    /* option 4 */
+    .opt--radio4 > span:after{
+        content: "Azure Resource Manager Locks";
+    }
+/* Multi level dropdown menu */
+nav>ul:nth-child(1){
+    position: relative;
+    padding: 15px;
+    border: 1px solid #f0f1f5;
+}
+.right {
+    border: solid black;
+    border-width: 0 1px 1px 0; 
+    padding: 3px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    float: right;
+    margin-right: 20px;
+    margin-top: 5px;
+}
+ul li a, ul li{
+    text-decoration: none;
+    list-style-type: none;
+    color: white;
+}
+ul li{
+    padding: 5px 10px;
+}
+ul li, ul li a{
+    color: #a2a4a5;
+
+}
+ul li:hover, ul li a:hover{
+    color: #2b90fa;
+    background-color: #f5f5f5;
+}
+nav> ul> li{
+    display: inline-block;    
+}
+/* hide the dropdown */
+    li ul{
+        display: none;
+        -moz-box-shadow:    3px 3px 5px 6px #ccc;
+        -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+        box-shadow:         3px 3px 5px 6px #ccc;
+        background-color: #ffffff;
+    }
+    
+/* show the dropdown */
+    ul > li:hover > ul{
+        position: absolute;
+        display: inline-block;
+        padding: 10px;
+        
+    }
+    ul > li:hover > ul:nth-child(1){
+        display: block; 
+    }
+    ul > li > ul:not(:nth-child(1)){
+        left: 95%;
+        width: 130%;
+    }
+/* Timer Limit */
+#vwg-timer{
+    margin: 0px 10%;
+    padding: 10px;
+}
+#vwg-setTimeSec{
+    text-align: center;
+}
+#vwg-timerCountDwn{
+    background-color: #e9edf1;
+    padding: 15px 10px 5px 10px;
+    margin-top: 10px;
+    border-radius: 4px;
+}
+#vwg-timeCont{
+    background-color: #ffffff;
+    height: 3px;
+    border-radius: 5px;
+}
+
+#vwg-timeDigitProgrs{
+    color: #968290;
+}
+.ui-widget-header{
+    background-color: #077afa;
+    height: 3px;
+    border-radius: 5px;
+}

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../css/style.css">
+	<title>Web Design Activity #2</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"> </script>
+	</head>
+<body>
+	<section>
+		<!-- Question -->
+        <div id="question">
+            <p>5. QUESTION</p>
+            <p>
+                <p>An organization has successfully migrated its SQL Database to Azurea and they want to prevent other users in the organization from accessidentally deleting or <br> modifying critical resources.<br><br><br>What Azure feature should they use?</p>
+            </p>
+        </div>
+        <div>
+        	<!-- Radio Button 1 -->
+            <div class="rb-option opt--radio1">
+                <div class="rb-Border border--rad1">
+                    <div class="rb-Select select--rad1"></div>
+                </div>
+                <span></span>
+            </div>
+
+            <!-- Radio Button 2 -->
+            <div class="rb-option opt--radio2">
+                <div class="rb-Border border--rad2">
+                    <div class="rb-Select select--rad2"></div>
+                </div>
+                <span></span>
+            </div>
+
+            <!-- Radio Button 3 -->
+            <div class="rb-option opt--radio3">
+                <div class="rb-Border border--radio3">
+                    <div class="rb-Select select--rad3"></div>
+                </div>
+                <span></span>
+            </div>
+
+            <!-- Radio Button 4 -->
+            <div class="rb-option opt--radio4">
+                <div class="rb-Border border--radio4">
+                    <div class="rb-Select select--rad4"></div>
+                </div>
+                <span></span>
+            </div>
+        </div>
+        <nav>
+	        <ul>
+	            <li><a href="#">Home</a></li>
+	            <li>  All Courses and eBooks
+	                    
+	                <!-- 1st Level Dropdown -->
+	                <ul>
+	                    <li><a href="#">VIEW All Practice Test Coureses and eBooks</a></li>
+	                    
+	                    <!-- 2nd Level Dropdown -->
+	                    <li>AWS Practice Exams <i class="right"></i>
+	                        <ul>
+	                            <li><a href="#">Lorem ipsum dolor <i class="right"></i></a>
+	                            <!-- 3rd level -->
+	                                <ul>
+	                                    <li><a href="#">Lorem ipsum dolor amet</a></li> 
+	                                    <li><a href="#">Lorem ipsum dolor amet</a></li>
+	                                    <li><a href="#">Lorem ipsum dolor amet</a></li>        
+	                                </ul>    
+	                            
+	                            </li>
+	                            <li><a href="#">Lorem ipsum dolor amet</a></li> 
+	                            <li><a href="#">Lorem ipsum dolor amet</a></li>
+	                            <li><a href="#">Lorem ipsum dolor amet</a></li>
+	                            <li><a href="#">Lorem ipsum dolor amet</a></li>
+	                        </ul>
+	                    </li>
+	                    
+	                    <!-- 2nd Level Dropdown -->
+	                    <li>AWS eBooks <i class="right"></i>
+	                        <ul>
+	                            <li><a href="#">FREE Intro to Cloud Computing for Beginners</a></li>
+	                            <li><a href="#">AWS Certified Cloud Practitioner eBook</a></li>
+	                            <li><a href="#">AWS Certified Solutions Architech Associate eBook</a></li>
+	                            <li><a href="#">AWS Certified Developer Associate eBook</a></li>
+	                            <li><a href="#">NEW! AWS Certified SysOps Administrator Associate eBook</a></li>
+	                            <li><a href="#">NEW! AWS Certified DevOps Engineer Professional eBook</a></li>
+	                        </ul>
+	                    </li>
+	                    <!-- 2nd Level Dropdown -->
+	                    <li>Azure Reviewers <i class="right"></i>
+	                        <ul>
+	                            <li><a href="#">Lorem ipsum dolor amet</a></li>
+	                            <li><a href="#">Lorem ipsum dolor amet</a></li> 
+	                            <li><a href="#">Lorem ipsum dolor amet</a></li>
+	                            <li><a href="#">Lorem ipsum dolor amet</a></li>
+	                            <li><a href="#">Lorem ipsum dolor amet</a></li>
+	                        </ul>
+	                    </li>
+	                    <li><a href="#">Free Practice Test Samplers</a></li>
+	                </ul>
+
+	                
+	            </li>
+
+	            <li>My Courses
+	                <ul>
+	                    <li><a href="#">Lorem ipsum dolor</a><i class="right"></i> 
+	                    
+	                        <ul>
+	                            <li><a href="#">Lorem ipsum dolor amet</a></li>
+	                            <li><a href="#">Lorem ipsum dolor amet</a></li> 
+	                            <li><a href="#">Lorem ipsum dolor amet</a></li>
+	                            <li><a href="#">Lorem ipsum dolor amet</a></li>
+	                            <li><a href="#">Lorem ipsum dolor amet</a></li>
+	                        </ul>
+	                    
+	                    </li>
+	                    <li><a href="#">Lorem ipsum dolor amet</a></li> 
+	                    <li><a href="#">Lorem ipsum dolor amet</a></li>
+	                    <li><a href="#">Lorem ipsum dolor amet</a></li>
+	                    <li><a href="#">Lorem ipsum dolor amet</a></li>
+	                </ul>
+	            </li>
+
+	            <li>SALE
+	                <ul>
+	                    <li><a href="#">Lorem ipsum dolor amet</a></li>
+	                    <li><a href="#">Lorem ipsum dolor amet</a></li> 
+	                    <li><a href="#">Lorem ipsum dolor amet</a></li>
+	                    <li><a href="#">Lorem ipsum dolor amet</a></li>
+	                    <li><a href="#">Lorem ipsum dolor amet</a></li>
+	                </ul>
+	            </li>
+	            <li><a href="#">FAQS</a></li>
+	            <li>...
+	                <ul>
+	                    <li><a href="#">Facebook</a></li>
+	                    <li><a href="#">LinkedIn</a></li>
+	                    <li><a href="#">Instagram</a></li>
+	                </ul>
+	            </li>
+	        </ul>
+    	</nav>
+	    <section id="vwg-timer">
+	        <section id="vwg-setTimeSec">
+	            <div>
+	                <form id="vwg-setTime">
+	                    <label for="vwg-timeInpID">Input time limit in seconds<br></label>
+	                    <input type="number" name="vwg-timeInp" id="vwg-timeInpID" class="vwg-timeInp">
+	                    <input type="submit" value="Start!">
+	                </form>
+	            </div>
+	        </section>
+	        <section id="vwg-timeProgrsSec">
+	            <div id="vwg-timerCountDwn">
+	                <span id="vwg-timeDigitProgrs">Time Limit:<span id="vwg-timeDigitTick"> </span></span>
+	                <div id="vwg-timeCont">
+	                   <div id="vwg-timeProgrs" ></div>
+	                </div>
+	            </div>
+	        </section> 
+	    </section>
+	</section>
+</body>
+	<script>
+       $(".rb-option").click(function(){
+            $(".rb-Select").css("background-color", "white" ); //reset
+            $(this).find('.rb-Select').css("background-color", "#0d7dfa" );
+        });
+
+	    //load progress bar
+	    $("#vwg-timeProgrs").progressbar({
+	        value: 0
+	    });
+	    $("#vwg-setTime").submit( function(event){
+	        event.preventDefault();
+	        var timeProg = 0;
+	        var timeSet = $("#vwg-timeInpID").val();
+	        var digitTick = timeSet;
+
+	        setInterval(function() {
+	            if(timeSet>0){
+	                --timeSet;
+	                $("#vwg-timeDigitTick").html(timeSet+" sec");
+	            }
+	        }, 1000);
+	        if(timeSet>0){
+	            $(".ui-widget-header").css("transition-duration" , timeSet+"s");
+	          
+	            //overide progress bar
+	            while( timeProg <= 100){        
+	                $("#vwg-timeProgrs").progressbar({
+	                    value: timeProg
+	                });
+	                timeProg++;
+	            }
+	        }
+	        else{
+	            alert("Invalid Input");
+	        }      
+	    });
+	</script>
+</html>
