@@ -1,13 +1,11 @@
-
 //num
-let numBtn = document.getElementsByClassName("jrt-num"); // unsorted number buttons
-let numCurrent = document.getElementById("jrt-current"); // current clicked number
+let numBtn = document.getElementsByClassName("vwg-num"); // unsorted number buttons
+let numCurrent = document.getElementById("vwg-current"); // current clicked number
 let decimal = document.getElementById("decimalBtn"); // decimal button only
-let numPrev = document.getElementById("jrt-historyText");
+let numPrev = document.getElementById("vwg-historyText");
 let numInp = new Array ("0"); // clicked numbers
 let num = null;  // inputted number
 let numToOperate = new Array();
-
 
 //operators
 let operate = document.getElementsByClassName("operator"); // all operators
@@ -15,10 +13,9 @@ let operatetors = new Array(); //clicked operators
 let viewOps = new Array();
 
 //backspace
-let backspace = document.getElementById("jrt-backspace");
+let backspace = document.getElementById("vwg-backspace");
 //clear
-let clear = document.getElementById("jrt-clear");
-
+let clear = document.getElementById("vwg-clear");
 
 //error trap for 0 in current screen
 let clicked = 1;
@@ -26,7 +23,6 @@ let clicked = 1;
 //equal vars
 let doOperation = document.getElementById("equalBtn");
 let ans = null;
-
 
 //unset func
 function unset(){
@@ -40,15 +36,16 @@ function unset(){
   ans = null;
 }
 
-//convert text to numbers 
-function convrtTxtNum(){
+//concat the numInp array
+function concatNumInp(){
   num=numInp[0];
   for(let numIndex = 1 ; numIndex<numInp.length;numIndex++){
     num +=  numInp[numIndex];
   }
-  num = Number(num);
+  
   // unset the numInp
   numInp = new Array();
+  
 }
 
 //view numToOperate
@@ -70,31 +67,27 @@ function hist(){
   }
 }
 
-
 //USE PEMDAS
 function calc(){
 
-  //get the answer for the first index
-  ans = numToOperate[0];
- 
-  //do operation
-  for(let index = 0; index < numToOperate.length ; index++){
-    if(operatetors[index] == "/"){
-      ans /= numToOperate[index+1];
+  //do eval
+  //concat all num with operator
+  let toCalc = null;
+  for(let index = 0 ; index < numToOperate.length ; index++){
+    if(toCalc == null){
+      toCalc=numToOperate[index];
     }
-    if(operatetors[index] == "*"){
-      ans *= numToOperate[index+1];
+    else{
+      toCalc += numToOperate[index];
     }
-    if(operatetors[index]== "+"){
-      ans += numToOperate[index+1]; 
+    if(numToOperate.length-1>index){
+      toCalc += operatetors[index];
     }
-    if(operatetors[index] == "-"){
-      ans -= numToOperate[index+1];
-    }
-  } 
+    
+  }
+  ans = eval(toCalc);
 }
  
-
 //add event listners to each numbuttons
 for( let index = 0; index < numBtn.length ; index++){
   numBtn[index].addEventListener("click",function(){
@@ -114,14 +107,12 @@ for( let index = 0; index < numBtn.length ; index++){
 
 }
 
-
 decimal.addEventListener("click",function(){
   numInp.push(decimal.value).toString();
   numCurrent.append(decimal.value);
   //disable the decimal button
   decimal.disabled = true;
 });
-
 
 backspace.addEventListener("click",function(){
   //if there is no operation yet
@@ -166,7 +157,6 @@ backspace.addEventListener("click",function(){
   }
 });
 
-
 clear.addEventListener("click",function(){
   //clear the Current input screen and unset all
   numCurrent.innerHTML = "0";
@@ -179,7 +169,7 @@ for(let index = 0; index< operate.length ; index++){
   operate[index].addEventListener("click",function(){
     //convert and send to Calculator class
     if(numInp.length != 0){
-      convrtTxtNum();
+      concatNumInp();
       // push the num to the array and do operation
       numToOperate.push(num);
       num=null;
@@ -199,7 +189,7 @@ for(let index = 0; index< operate.length ; index++){
 
 doOperation.addEventListener("click",function(){
   if(numInp.length != 0){
-    convrtTxtNum();
+    concatNumInp();
     // push the num to the array and do operation
     numToOperate.push(num);
   }
@@ -219,25 +209,5 @@ doOperation.addEventListener("click",function(){
     numCurrent.innerHTML = "0";
     numPrev.innerHTML = "";
   }
-
+  
 });
-
-
-
-
-
-/*todo
-fix the PEMDAS function
- //compare the pemdas sequence with the inputted operation
- for( let pemdasInd = 0 ; pemdasInd < pemdasSeq.length ; pemdasInd++){
-  for(let inpOp = 0 ; inpOp < operatetors.length; inpOp++){
-    if(pemdasSeq[pemdasInd] == operatetors[inpOp]){
-      if(operatetors[inpOp]=="*"){
-        result = numToOperate[inpOp] * numToOperate[inpOp+1];
-        
-      }
-    }
-  }
- }
-
-*/
