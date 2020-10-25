@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/index.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <section id="calc">
+        <div id="jrt-screenUI">
+            <!-- history -->
+            <div id="jrt-history">
+                <span id="jrt-historyText"></span>
+            </div>
+            <!-- present -->
+            <div id="jrt-present">
+                <span id="jrt-current">0</span>
+            </div>
+        </div>
+        <div id="jrt-operate">
+            <div id="jrt-del">
+                <button id="jrt-clear">CLEAR</button>
+                <button id="jrt-backspace">&#8592;</button>
+            </div>
+            <div class="jrt-operationBtn">      
+                <!-- (7) button -->
+                <div>
+                    <button class="jrt-num" value="7">7</button>
+                </div>   
+                <!-- (8) button -->
+                <div>
+                    <button class="jrt-num" value="8">8</button>
+                </div>           
+                <!-- (9) button -->
+                <div>
+                    <button class="jrt-num" value="9">9</button>
+                </div>
+                <!-- (/) button -->
+                <div>
+                    <button class="jrt-operation operator" value="/">&#247;</button>
+                </div>
+            </div>
+            <div class="jrt-operationBtn">
+                <!-- (4) button -->
+                <div>
+                    <button class="jrt-num" value="4">4</button>
+                </div>
+                <!-- (5) button -->
+                <div>
+                    <button class="jrt-num" value="5">5</button>
+                </div>
+                <!-- (6) button -->
+                <div>
+                    <button class="jrt-num" value="6">6</button>
+                </div>
+                <!-- (x) button -->
+                <div>
+                    <button class="jrt-operation operator" value="*">&#10005;</button>
+                </div>
+            </div>
+            <div class="jrt-operationBtn">
+                <!-- (1) button -->
+                <div>
+                    <button class="jrt-num" value="1"> 1</button>
+                </div> 
+                <!-- (2) button -->
+                <div>
+                    <button class="jrt-num" value="2">2</button>
+                </div>
+                <!-- (3) button -->
+                <div>
+                    <button class="jrt-num" value="3">3</button>
+                </div> 
+                <!-- (+) button  -->
+                <div>
+                    <button class="jrt-operation operator" value = "+">+</button>
+                </div>
+            </div>
+            <div class="jrt-operationBtn">
+                <!-- (0) button-->
+                <div>
+                    <button class="jrt-num" value="0">0</button>
+                </div>
+                <!-- (.) button -->
+                <div>
+                    <button class="jrt-operation" id = "decimalBtn" value=".">.</button>
+                </div>
+                <!-- (=) button -->
+                <div>
+                    <button class="jrt-operation" id = "equalBtn" value="=">=</button>
+                </div>
+                <!-- (-) button -->
+                <div>
+                    <button class="jrt-operation operator" value="-">-</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<!-- load the main js -->
+<script src="../js/index.js"></script>
+</html>

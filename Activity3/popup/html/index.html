@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/index.css">
+    <title>Activity #3 Pop Up</title>
+</head>
+<body>
+    <!-- Pop Up -->
+    <section id="jrt-popupBtn">
+        <p>The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.</p>
+        <button>Let's Get Started!</button>
+    </section>
+    <!-- this is the modal -->
+    <section id="jrt-popup">
+        <div id="jrt-modal">
+            <button id="jrt-closeBtn">X</button>
+            <h3>Enter your Details</h3>
+            <p>Let us know how to get back to you.</p>
+            <form action="">
+                <div class="jrt-detail">
+                    <label for="jrt-fname" class="jrt-inpTitle">Full Name</label>
+                    <input type="text" id ="jrt-fname" class="jrt-inp">    
+                </div>
+                <div class="jrt-detail">
+                    <label for="jrt-pnum" class="jrt-inpTitle">Phone Number</label>
+                    <input type="number" id ="jrt-pnum" class="jrt-inp">
+                </div>
+                <div class="jrt-detail">
+                    <label for="jrt-email" class="jrt-inpTitle">Email Address</label>
+                    <input type="email" id="jrt-email" class="jrt-inp">
+                </div>
+                <div class="jrt-detail">
+                    <label for="jrt-mssg">Your Question</label>
+                    <textarea name="Message" id="jrt-mssg" cols="70" rows="10"></textarea>
+                </div>
+                <div class="jrt-detail" id="jrt-submitBtnCont">
+                    <input type="submit" value="Done" id="jrt-submitBtn">
+                </div> 
+            </form>
+        </div>
+    </section>
+</body>
+<script src="../js/index.js"></script>
+</html>
