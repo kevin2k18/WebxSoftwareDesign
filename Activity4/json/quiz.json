@@ -1,0 +1,45 @@
+{
+
+    "QandOpt":  [
+        {
+            "question":"What is the first element on the periodic table?",
+            "options" : [
+                "Hydrogen",
+                "Aluminum",
+                "Boron",
+                "Lithium"]
+        },
+        {
+            "question":"What is the centre of an atom called?",
+            "options" : [
+                "An electron",
+                "A nucleus",
+                "A proton",
+                "An atom"]
+        },
+        {
+            "question":"True or false? Acids have a pH level below 7.",
+            "options" : [
+                "True",
+                "False",
+                "Tralse",
+                "No idea"]
+        },
+        {
+            "question":"True or false? A neutron has no net electric charge.",
+            "options" : [
+                "True",
+                "False",
+                "Tralse",
+                "No idea"]
+        },
+        {
+            "question":"True or false? Bases have a pH level below 7.",
+            "options" : [
+                "True",
+                "False",
+                "Tralse",
+                "No idea"]
+        }
+    ]
+}

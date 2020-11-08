@@ -1,0 +1,79 @@
+body{
+    background-color: #e8e4c92e;
+}
+#startQuiz
+{
+    text-align: center;
+    position: absolute;
+    width: 100%;
+}
+#startQuiz > div > button
+{
+    padding: 25px 50px;
+    border: 0px;
+    border-radius: 10px;
+    background-color: #87CEEB;
+    color: white;
+}
+/* this is pop up */
+#modal
+{
+    position: relative;
+    visibility: hidden;
+    width: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: auto;
+}
+#modalcont
+{
+    border: 1px solid #e7e9ec;
+    background-color: white;
+    height: auto;
+    padding: 10px;
+}
+#closeBtn{
+    float:right;
+}
+#nxtPrevBtn > button{
+    padding: 10px;
+    background-color: blue;
+    color: white;
+    border: 0px;
+    border-radius: 5px;
+    text-align: center;
+}
+#prevBtn{
+    float: left;
+}
+#nextBtn{
+    float: right;
+}
+/* this is radio button */
+#jrt-question p:nth-child(1){
+    font-weight: bold;
+    font-size: medium;
+    padding: 10px 15px;
+}
+#jrt-question p:nth-child(2){
+    padding: 0px 15px;
+}
+.jrt-option{
+    border: 1px solid #e7e9ec;
+    margin: 10px 15px;
+    padding: 15px;
+}
+.jrt-radBorder{
+    border-radius: 100%;
+    border: 2px solid #d6dce6;
+    display: inline-block;
+    margin-right:5px ;
+}   
+.jrt-radSelect{
+    margin: 2px;
+    padding: 4px;
+    border-radius: 100%;
+}
+.jrt-radBorder + span{
+    display: inline-block;
+}   
