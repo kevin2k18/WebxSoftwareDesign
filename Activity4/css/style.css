@@ -37,11 +37,15 @@ body{
 }
 #nxtPrevBtn > button{
     padding: 10px;
-    background-color: blue;
+    background-color: gray;
     color: white;
     border: 0px;
     border-radius: 5px;
     text-align: center;
+}
+
+#nxtPrevBtn :hover {
+    background-color: blue;
 }
 #prevBtn{
     float: left;
@@ -50,30 +54,33 @@ body{
     float: right;
 }
 /* this is radio button */
-#jrt-question p:nth-child(1){
+#kav-question p:nth-child(1){
     font-weight: bold;
     font-size: medium;
     padding: 10px 15px;
 }
-#jrt-question p:nth-child(2){
+#kav-question p:nth-child(2){
     padding: 0px 15px;
 }
-.jrt-option{
+.kav-option{
     border: 1px solid #e7e9ec;
     margin: 10px 15px;
     padding: 15px;
 }
-.jrt-radBorder{
+.kav-option:hover {
+    background-color: gray;
+}
+.kav-radBorder{
     border-radius: 100%;
     border: 2px solid #d6dce6;
     display: inline-block;
     margin-right:5px ;
 }   
-.jrt-radSelect{
+.kav-radSelect{
     margin: 2px;
     padding: 4px;
     border-radius: 100%;
 }
-.jrt-radBorder + span{
+.kav-radBorder + span{
     display: inline-block;
 }   
