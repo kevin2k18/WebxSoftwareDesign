@@ -1,6 +1,7 @@
 body
 {
   font-family: Arial, Helvetica, sans-serif;
+  background-color: gray;
 }
 /* Custom Radio Button */
 #question p:nth-child(1)
@@ -13,23 +14,26 @@ body
 {
   padding: 0px 15px;
 }
-.jrt-option{
+.kav-option{
     border: 1px solid #e7e9ec;
     margin: 10px 15px;
     padding: 15px;
 }
-.jrt-Border{
+.kav-option:hover {
+    background-color: #fff;
+}
+.kav-Border{
     border-radius: 100%;
     border: 2px solid #d6dce6;
     display: inline-block;
     margin-right:5px ;
 }   
-.jrt-Select{
+.kav-Select{
     margin: 2px;
     padding: 4px;
     border-radius: 100%;
 }
-.jrt-Border + span{
+.kav-Border + span{
     display: inline-block;
 }
     /* option 1 */
@@ -56,7 +60,7 @@ nav>ul:nth-child(1){
     padding: 15px;
     border: 1px solid #f0f1f5;
 }
-.jrt-right {
+.kav-right {
     border: solid black;
     border-width: 0 1px 1px 0; 
     padding: 3px;
@@ -88,9 +92,9 @@ nav> ul> li{
 /* hide the dropdown */
     li ul{
         display: none;
-        -moz-box-shadow:    3px 3px 5px 6px #ccc;
-        -webkit-box-shadow: 3px 3px 5px 6px #ccc;
-        box-shadow:         3px 3px 5px 6px #ccc;
+        -moz-box-shadow:    3px 3px 4px 6px #ccc;
+        -webkit-box-shadow: 3px 3px 4px 6px #ccc;
+        box-shadow:         3px 3px 4px 6px #ccc;
         background-color: #ffffff;
     }
 /* show the dropdown */
@@ -109,25 +113,25 @@ nav> ul> li{
     }
 
 /* Time Limit */
-#jrt-timerlimit{
+#kav-timerlimit{
     margin: 0px 10%;
     padding: 10px;
 }
-#jrt-setTimeSec{
+#kav-setTimeSec{
     text-align: center;
 }
-#jrt-timerCountDwn{
+#kav-timerCountDwn{
     background-color: #e9edf1;
     padding: 15px 10px 5px 10px;
     margin-top: 10px;
     border-radius: 4px;
 }
-#jrt-timeCont{
+#kav-timeCont{
     background-color: #ffffff;
     height: 3px;
     border-radius: 5px;
 }
-#jrt-timeDigitProgrs{
+#kav-timeDigitProgrs{
     color: #968290;
 }
 .ui-widget-header{
