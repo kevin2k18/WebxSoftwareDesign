@@ -1,6 +1,6 @@
-let popupBtn = document.getElementById("jrt-popupBtn");
-let modal = document.getElementById("jrt-modal");
-let closeBtn = document.getElementById("jrt-closeBtn");
+let popupBtn = document.getElementById("kav-popupBtn");
+let modal = document.getElementById("kav-modal");
+let closeBtn = document.getElementById("kav-closeBtn");
 popupBtn.addEventListener("click",()=>{
     modal.style.opacity = 1;
     modal.style.visibility = "visible";

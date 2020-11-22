@@ -2,33 +2,33 @@ body
 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-#jrt-timer
+#kav-timer
 {
     margin: 0px 10%;
     padding: 10px;
 }
-#jrt-setTimeSec
+#kav-setTimeSec
 {
     text-align: center;
 }
-#jrt-timerCountDwn
+#kav-timerCountDwn
 {
     background-color: #e9edf1;
     padding: 15px 10px 5px 10px;
     margin-top: 10px;
     border-radius: 4px;
 }
-#jrt-timeCont
+#kav-timeCont
 {
     background-color: #ffffff;
     height: 3px;
     border-radius: 5px;
 }
-#jrt-timeDigitProgrs
+#kav-timeDigitProgrs
 {
     color: #968290;
 }
-#jrt-timeProgrs
+#kav-timeProgrs
 {
     background-color: #077afa;
     height: 3px;

@@ -8,32 +8,36 @@ body{
     margin-right: auto;
     width: 257px;
 }
-#jrt-screenUI{
+#kav-screenUI{
     /* background-color: purple; */
     height: 100px;
     border-radius:10px 10px 0px 0px;
     border: 1px solid #dfe1e5;
+    background-color: #00008b;
     
 }
-#jrt-history{
+#kav-history{
     height: 50%;
 }
-#jrt-historyText, #jrt-current{
+#kav-historyText, #kav-current{
     float: right;
+    color: white;
+    font-size: 32px;
 }
-#jrt-present{
+#kav-present{
     height: 50%;
 }
-#jrt-operate{
+#kav-operate{
     /* background-color: turquoise; */
     border-radius:0px 0px 10px 10px;
     border: 1px solid #dfe1e5;
     border-top: 0px;
+    background-color: black;
 }
-.jrt-operationBtn{
+.kav-operationBtn{
     display: block;
 }
-.jrt-operationBtn div{
+.kav-operationBtn div{
     display: inline-block;
 }
 button{
@@ -41,24 +45,27 @@ button{
     height: 50px;
     margin: 5px;
 }
-#jrt-clear {
+#kav-clear {
     padding:0px;
     margin-left: 52.5%;
 }
-#jrt-backspace{
+#kav-backspace{
     font-size: 15px;
 }
-.jrt-num{
+.kav-num{
     background-color: #f1f3f4;
     border: 2px solid #f1f3f4 ;
     border-radius: 4px;
 }
-.jrt-operation{
+
+.kav-operation{
     background-color: #dfe1e5;
     border: 2px solid #dfe1e5;
 }
+
+
 #equalBtn{
     background-color: #4285f4;
     border: 2px solid #4285f4;
-    color: wheat;
+    color: white;
 }
